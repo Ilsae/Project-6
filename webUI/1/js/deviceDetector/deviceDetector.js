@@ -38,6 +38,7 @@ setTimeout(function() {
 setTimeout(function() {
 	document.getElementById("deviceLoader").remove();
     document.getElementById("disabledButton").className = "next button";
+    document.getElementById("#step1 section header p").html("On heeft de volgende apparaten gevonden:")
 },(Math.random() * random) + base + (difference*6));
 
 
