@@ -4,7 +4,7 @@
     <section>
         <header>
             <p>
-                On heeft deze apparaten gevonden:
+                On zoekt naar apparaten...
             </p>
             <a href="#">
                 <i class="fa fa-repeat"></i> Bekijk de instructie opnieuw
