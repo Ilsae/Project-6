@@ -37,7 +37,7 @@ setTimeout(function() {
 //loader
 setTimeout(function() {
 	$("#deviceLoader").remove();
-    $("#disabledButton").removeClass("next button");
+    $("#disabledButton").removeClass("disabled");
     $("#headerTxt").html("On heeft de volgende apparaten gevonden:");
     $("#headerLink").html('<i class="fa fa-repeat"></i> Zoek naar meer apparaten');
 },(Math.random() * random) + base + (difference*6));
