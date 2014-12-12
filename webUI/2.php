@@ -4,7 +4,7 @@
     <section>
         <header>
             <p>
-                Verbind On met je wifi-netwerk.
+                Verbind On met je Wi-Fi.
             </p>
         </header>
         <div class="content">
