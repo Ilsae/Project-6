@@ -33,5 +33,5 @@
 
 
 
-<script type="text/javascript" src="webUI/3/js/dropdown.js"></script>
-<script type="text/javascript" src="webUI/3/js/viewCam.js"></script>
+    <script type="text/javascript" src="webUI/3/js/dropdown.js"></script>
+    <script type="text/javascript" src="webUI/3/js/viewCam.js"></script>

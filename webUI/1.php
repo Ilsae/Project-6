@@ -3,11 +3,11 @@
     </header>
     <section>
         <header>
-            <p>
+            <p id="headerTxt">
                 On zoekt naar apparaten...
             </p>
-            <a href="#">
-                <i class="fa fa-repeat"></i> Bekijk de instructie opnieuw
+            <a id="headerLink" href="#">
+
             </a>
         </header>
         <div class="content">

@@ -36,9 +36,10 @@ setTimeout(function() {
 
 //loader
 setTimeout(function() {
-	document.getElementById("deviceLoader").remove();
-    document.getElementById("disabledButton").className = "next button";
-    document.getElementById("#step1 section header p").html("On heeft de volgende apparaten gevonden:")
+	$("#deviceLoader").remove();
+    $("#disabledButton").className = "next button";
+    $("#headerTxt").html("On heeft de volgende apparaten gevonden:");
+    $("#headerLink").html('<i class="fa fa-repeat"></i> Zoek naar meer apparaten');
 },(Math.random() * random) + base + (difference*6));
 
 
