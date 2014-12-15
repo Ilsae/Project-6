@@ -35,4 +35,4 @@
     <a href="#" class="prev button"><i class="fa fa-caret-left"></i> Vorige</a>
     <a href="#zones" class="next button disabled" id="disabledButton">Volgende <i class="fa fa-caret-right"></i></a>
 
-	<script type="text/javascript" src="webUI/2/js/wifiDetector/wifiDetector.js"></script>
+	<script type="text/javascript" src="webUI/2/js/wifiDetector/step2.js"></script>

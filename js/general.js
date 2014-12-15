@@ -2,9 +2,9 @@ routie({
     '':             function() {    loadStep(1);    },
     'connection':   function() {    loadStep(2);    },
     'zones':        function() {    loadStep(3);    },
-    'lighteling':   function() {    loadStep(4);    },
+    'lightening':   function() {    loadStep(4);    }
 
-    'server':       function() {    loadStep(9);    }
+
 });
 
 
@@ -25,11 +25,24 @@ function loadStep(step) {
     }
 }
 
-
-
-
 //change the classes
 function activate(step) {
+
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        // You are in mobile browser{
+        $('input').bind('focus',function() {
+            $("body").addClass("keyboard");
+        });
+
+        $('input').bind('blur',function() {
+            $("body").removeClass("keyboard");
+        });
+    }
+
+
+
+    //activate the webcams in that step
+    activateCam();
 
     if(step == 1) {
         $("#step0").attr('class', 'step active');
@@ -47,8 +60,20 @@ function activate(step) {
 			$("#step"+i).attr('class', 'step inactive');
 		}
 	};
-	
 }
+
+
+
+//disable scrolling
+$(document).bind("touchmove",function(event){
+    event.preventDefault();
+});
+
+
+
+//check if the keyboard is open
+
+
 
 function setLights(onOff) {
     var client = new XMLHttpRequest();

@@ -39,13 +39,11 @@ setTimeout(function () {
         }, false);
     }
 
-
-    document.getElementById("pwField").addEventListener("keyup", function(e){
+    $("#pwField").keyup(function(e){
         if(e.target.value.length > 7) {
             document.getElementById('disabledButton').className="next button";
         } else {
             document.getElementById('disabledButton').className="next button disabled";
-
         }
     });
 

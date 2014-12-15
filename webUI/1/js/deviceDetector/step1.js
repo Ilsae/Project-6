@@ -1,6 +1,15 @@
+
+var debugmode = false;
+
 var base = 5000;
 var difference = 1300;
 var random = 1000;
+
+if(debugmode) {
+    base = 1000;
+    difference = 100;
+    random = 100;
+}
 
 
 //lights
@@ -14,6 +23,10 @@ setTimeout(function() {
 
 setTimeout(function() {
 	document.getElementById("light3").className = "light";
+
+    setTimeout(function(){
+        coachMark(1);
+    }, 600);
 },(Math.random() * random) + base + (difference*2));
 
 setTimeout(function() {
@@ -40,6 +53,7 @@ setTimeout(function() {
     $("#disabledButton").removeClass("disabled");
     $("#headerTxt").html("On heeft de volgende apparaten gevonden:");
     $("#headerLink").html('<i class="fa fa-repeat"></i> Zoek naar meer apparaten');
+
 },(Math.random() * random) + base + (difference*6));
 
 
@@ -162,3 +176,29 @@ document.getElementById("light4").addEventListener("click", function(e){
     }
     setLights(light1+light2+light3+light4);
 });
+
+
+var coachMark2Seen = 0;
+
+$(".light").not("input").click(function(e){
+    if(coachMark2Seen == 0) {
+        coachMark(2);
+        coachMark2Seen ++;
+    } else if(coachMark2Seen == 1 && $(e.target).attr("class") != "light" ) {
+        toastMsg(1);
+        coachMark2Seen ++;
+    }
+});
+
+
+$( "#camera1, #camera2").not("input").click(function() {
+    $(this).addClass( "on" );
+    $("#hiddenOverlay").removeClass("disabled");
+    toastMsg(2);
+});
+
+$( "#hiddenOverlay" ).click(function() {
+    $("#camera1, #camera2").removeClass( "on" );
+    $("#hiddenOverlay").addClass("disabled");
+});
+

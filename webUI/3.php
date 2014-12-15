@@ -4,11 +4,13 @@
 	<section>
 		<header>
 			<p>
-				Stel de zones in.
+				Maak je zones en kleur ze in.
 			</p>
+			<a>Zones zijn de plaatsen waar je je kunt bevinden, in de volgende stap koppel je hier je lampen aan.</a>
 		</header>
 		<div class="content">
 			<div id="cam">
+				<div id="camOverlay"></div>
             	<video class="cameraViewport" autoplay></video>
             </div>
             <div id="form">
@@ -33,5 +35,5 @@
 
 
 
-    <script type="text/javascript" src="webUI/3/js/dropdown.js"></script>
-    <script type="text/javascript" src="webUI/3/js/viewCam.js"></script>
+    <script type="text/javascript" src="webUI/3/js/sketch.min.js"></script>
+    <script type="text/javascript" src="webUI/3/js/step3.js"></script>
