@@ -12,7 +12,7 @@ function coachMark(id, after) {
         "55vh", // de afstand van de bovenkant
 
         // Het handje
-        "press", //de beweging die de hand maakt (press, draw of
+        "doublePress", //de beweging die de hand maakt (press, draw of
         "28.5vh", // de afstand van de bovenkant
         "31vh",  // de afstand van de bovenkant
 

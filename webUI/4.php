@@ -9,7 +9,7 @@
 		</header>
 		<div class="content">
 			<div id="cam">
-            	<video class="cameraViewport" autoplay></video>
+				<img src="server/images/latest.jpg" alt=""/>
             </div>
             <div id="form">
 

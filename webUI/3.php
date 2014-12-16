@@ -11,7 +11,7 @@
 		<div class="content">
 			<div id="cam">
 				<div id="camOverlay"></div>
-            	<video class="cameraViewport" autoplay></video>
+				<img src="server/images/latest.jpg" alt=""/>
             </div>
             <div id="form">
 				<ul id="zones">

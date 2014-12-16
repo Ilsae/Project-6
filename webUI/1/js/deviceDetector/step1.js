@@ -119,62 +119,70 @@ var light3 = "0";
 var light4 = "0";
 setLights(light1+light2+light3+light4);
 
-document.getElementById("light1").addEventListener("click", function(e){
-    if(light1 == "0") {
+$("#light1").not("input").click(function(e) {
+    if($(e.target).get(0).tagName != "input") {
+        if (light1 == "0") {
 
-        light1 = "1";
-        e.target.className = "light on";
+            light1 = "1";
+            e.target.className = "light on";
 
 
-    } else {
-        light1 = "0";
-        e.target.className = "light";
+        } else {
+            light1 = "0";
+            e.target.className = "light";
 
+        }
+        setLights(light1 + light2 + light3 + light4);
     }
-    setLights(light1+light2+light3+light4);
 
 });
-document.getElementById("light2").addEventListener("click", function(e){
-    if(light2 == "0") {
+$("#light2").not("input").click(function(e) {
+    if($(e.target).get(0).tagName != "input") {
+        if (light2 == "0") {
 
-        light2 = "1";
-        e.target.className = "light on";
+            light2 = "1";
+            e.target.className = "light on";
 
-    } else {
+        } else {
 
-        light2 = "0";
-        e.target.className = "light";
+            light2 = "0";
+            e.target.className = "light";
 
+        }
+        setLights(light1 + light2 + light3 + light4);
     }
-    setLights(light1+light2+light3+light4);
 });
-document.getElementById("light3").addEventListener("click", function(e){
-    if(light3 == "0") {
+$("#light3").not("input").click(function(e) {
+    if($(e.target).get(0).tagName != "input") {
+        if (light3 == "0") {
 
-        light3 = "1";
-        e.target.className = "light on";
+            light3 = "1";
+            e.target.className = "light on";
 
-    } else {
+        } else {
 
-        light3 = "0";
-        e.target.className = "light";
+            light3 = "0";
+            e.target.className = "light";
 
+        }
+        setLights(light1 + light2 + light3 + light4);
     }
-    setLights(light1+light2+light3+light4);
 });
-document.getElementById("light4").addEventListener("click", function(e){
-    if(light4 == "0") {
+$("#light4").not("input").click(function(e) {
+    if($(e.target).get(0).tagName != "input") {
+        if (light4 == "0") {
 
-        light4 = "1";
-        e.target.className = "light on";
+            light4 = "1";
+            e.target.className = "light on";
 
-    } else {
+        } else {
 
-        light4 = "0";
-        e.target.className = "light";
+            light4 = "0";
+            e.target.className = "light";
 
+        }
+        setLights(light1 + light2 + light3 + light4);
     }
-    setLights(light1+light2+light3+light4);
 });
 
 

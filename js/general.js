@@ -7,9 +7,6 @@ routie({
 
 });
 
-
-
-
 //load selected page
 function loadStep(step) {
     //check if the page has been loaded before
@@ -38,11 +35,7 @@ function activate(step) {
             $("body").removeClass("keyboard");
         });
     }
-
-
-
-    //activate the webcams in that step
-    activateCam();
+    
 
     if(step == 1) {
         $("#step0").attr('class', 'step active');
@@ -77,7 +70,7 @@ $(document).bind("touchmove",function(event){
 
 function setLights(onOff) {
     var client = new XMLHttpRequest();
-    client.open('GET', 'arduino/setLights.php?set='+onOff);
+    client.open('GET', 'arduino/?set='+onOff);
     client.onreadystatechange = function() {
         //console.log(client.responseText);
     }

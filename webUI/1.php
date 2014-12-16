@@ -23,13 +23,13 @@
                 <li class="camera hidden" id="camera1">
                     <input placeholder="Camera 1">
                     <div class="webCamPopup">
-                        <video class="cameraViewport" autoplay></video>
+                        <img src="server/images/latest.jpg" alt=""/>
                     </div>
                 </li>
                 <li class="camera hidden" id="camera2">
                     <input placeholder="Camera 2">
                     <div class="webCamPopup">
-                        <video class="cameraViewport" autoplay></video>
+                        <img src="server/images/latest.jpg" alt=""/>
                     </div>
                 </li>
             </ul>
